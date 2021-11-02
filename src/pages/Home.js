@@ -97,7 +97,7 @@ function Home() {
   const handleSearch = async (symbol) => {
     try {
       const res = await fetch(
-        `https://alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&outputsize=full&apikey=A3U8E3F7N3A85K86`
+        `https://sleepy-everglades-14883.herokuapp.com/https://alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&outputsize=full&apikey=A3U8E3F7N3A85K86`
       ).then((res) => res.json());
 
       // check response
